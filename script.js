@@ -4,7 +4,6 @@ const pedra = document.querySelector("button#pedra"),
   tesoura = document.querySelector("button#tesoura");
 const res = document.querySelector("div#res");
 const comValue = document.querySelector("div#computer-value");
-const playerValue = document.querySelector("div#player-value");
 let computerValue;
 
 pedra.addEventListener("click", allFunctions);
@@ -54,7 +53,6 @@ function comparison(player, computer) {
 }
 function allFunctions(event) {
   comValue.innerHTML = "";
-  playerValue.innerHTML = "";
   res.innerHTML = "";
   const playerChoice = player(event);
   const computerChoice = computer();
